@@ -20,7 +20,7 @@ function adicionarHttp(url) {
     return "http://" + url
 }
 
-function processar(array,adicionarHttp){
+function processar(array,adicionarHttp,b){
     lista=[]
     for (let i = 0;i <array.length;i++){
         
@@ -30,3 +30,10 @@ function processar(array,adicionarHttp){
 }
 
 console.log(processar(["www.yahoo.com.br","www.google.com"],adicionarHttp))
+
+
+const somar = (numero,numero2) => {
+    console.log("Recebi um numero:"+numero)
+    
+}
+somar(13);
