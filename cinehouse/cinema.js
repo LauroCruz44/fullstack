@@ -114,36 +114,58 @@ function adicionarFilme(array){
 
 // }
 
-const teste = true
-const ternario = teste ? "resposta 1" : "resposta2"
+// const teste = true
+// const ternario = teste ? "resposta 1" : "resposta2"
 
-function alterarStatusEmCartaz1(codigo){
-    for(let i = 0; i < catalogo.length; i++){
-        if(catalogo[i].codigo === codigo) {
-            if(catalogo[i].emCartaz === true){
-                catalogo[i].emCartaz = false
-            }
-            else {
-                catalogo[i].emCartaz = true
-            }
-        }
-    }
-}
+// function alterarStatusEmCartaz1(codigo){
+//     for(let i = 0; i < catalogo.length; i++){
+//         if(catalogo[i].codigo === codigo) {
+//             if(catalogo[i].emCartaz === true){
+//                 catalogo[i].emCartaz = false
+//             }
+//             else {
+//                 catalogo[i].emCartaz = true
+//             }
+//         }
+//     }
+// }
 
-function alterarStatusEmCartaz3(codigo){
-    for(let i = 0; i < catalogo.length; i++){
-        if(catalogo[i].codigo === codigo) {
-            catalogo[i].emCartaz === true ? 
-                catalogo[i].emCartaz = false : 
-                catalogo[i].emCartaz = true   
-        }
-    }
-}
+// function alterarStatusEmCartaz3(codigo){
+//     for(let i = 0; i < catalogo.length; i++){
+//         if(catalogo[i].codigo === codigo) {
+//             catalogo[i].emCartaz === true ? 
+//                 catalogo[i].emCartaz = false : 
+//                 catalogo[i].emCartaz = true   
+//         }
+//     }
+// }
 
-function alterarStatusEmCartaz2(codigo){
-    for(let i = 0; i < catalogo.length; i++){
-        if(catalogo[i].codigo === codigo) {
-            catalogo[i].emCartaz = !catalogo[i].emCartaz
-        }
-    }
-}
+// function alterarStatusEmCartaz2(codigo){
+//     for(let i = 0; i < catalogo.length; i++){
+//         if(catalogo[i].codigo === codigo) {
+//             catalogo[i].emCartaz = !catalogo[i].emCartaz
+//         }
+//     }
+// }
+
+
+// const listarFilmesDeLongaDuracao = () => {
+//   const filmesLongos = catalogo.filter((filme) => {
+//       return filme.duracao > 150
+//   })
+
+//   return filmesLongos
+// }
+
+// let total =[0,1,2,3].reduce(function(acumulador,valoratual) {
+//   return acumulador + valoratual;},0)
+
+//   console.log(total)
+
+let total =[0,2,2,3].reduce(function(acumulador,valoratual,index,array) {
+  console.log("Interacao",index,acumulador,valoratual)
+  acumulador.push(valoratual)
+    return acumulador;
+  },[])
+  
+  console.log(total)
