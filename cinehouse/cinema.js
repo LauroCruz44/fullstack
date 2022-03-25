@@ -1,51 +1,51 @@
-//let filme1 = {
-  //  codigo:1,
-    //titulo:' Velozes e furiosos',
-    //duracao:1.51,
-    //atores:['Ator1','Ator2','Ator3'],
-    //anoLancamento:2000,
-    //emCartaz: false,
-    //atores:[{nome:'Ator1',idade:50,altura:1.80},'Ator2','Ator3']
-//}
+// let filme1 = {
+//    codigo:1,
+//     titulo:' Velozes e furiosos',
+//     duracao:1.51,
+//     atores:['Ator1','Ator2','Ator3'],
+//     anoLancamento:2000,
+//     emCartaz: false,
+//     atores:[{nome:'Ator1',idade:50,altura:1.80},'Ator2','Ator3']
+// }
 
-//let filme2 = {
-  //  codigo:1,
-   // titulo:' Velozes e furiosos 2',
-//    duracao:1.51,
-  //  atores:['Ator1','Ator2','Ator3'],
-   // anoLancamento:2000,
-    //emCartaz: false,
-//}
+// let filme2 = {
+//    codigo:2,
+//    titulo:' Velozes e furiosos 2',
+//    duracao:1.1,
+//    atores:['Ator1','Ator2','Ator3'],
+//    anoLancamento:2010,
+//     emCartaz: false,
+// }
 
 
-//let filmes3 = {
-  //  codigo:3,
-   // titulo:'texto',
-    //duracao:1,
-    //atores:['Ator2','Ator4',' Ator5'],
-    //anoLancamento:2003,
-    //emCartaz:true,
-//}
-//console.log(filmes3)
-//let filmes =[filme1,filme2]
+// let filme3 = {
+//    codigo:3,
+//    titulo:'Velozes e Furisos3',
+//     duracao:1,
+//     atores:['Ator2','Ator4',' Ator5'],
+//     anoLancamento:2013,
+//     emCartaz:true,
+// }
+// console.log(filmes3)
+// let filmes =[filme1,filme2,]
 
-//let filmes=[]
-//filmes.push(filme2)
-//filmes[0].atores.push('Ator5')
-//const retornoPush =filmes.unshift(filme1)//coloca na primeira poscao
-//const retornoPush =filmes.push(filme1,filme2)
-//console.log(filmes)
+// let filmes=[]
+// filmes.push(filme2)
+// filmes[0].atores.push('Ator5')
+// const retornoPush =filmes.unshift(filme1)//coloca na primeira poscao
+// const retornoPush =filmes.push(filme1,filme2)
+// console.log(filmes)
 
-//const teste =[1,2,3,4,5]
-//console.log(teste.indexOf(3))
+// const teste =[1,2,3,4,5]
+// console.log(teste.indexOf(3))
 
-let catalogo =[]
-function adicionarFilme(array){
-   catalogo.push(array)
-}
+// let catalogo =[]
+// function adicionarFilme(array){
+//    catalogo.push(array)
+// }
 
-//adicionarFilme(filme1,filme2,filmes3)
-//console.log(catalogo)
+// adicionarFilme([filme1,filme2,filme3])
+// console.log(catalogo)
 
 
 //function buscarFilme(numero){
@@ -98,10 +98,7 @@ function adicionarFilme(array){
 
 //const retornoParse = JSON.parse(retornoStringfy)
 //console.log(retornoParse)
-
-
-// const catalogo = require("./database/catalogo.json")
-// console.log(catalogo[0])
+// console.log(catalogo)
 
 // const minhaString = "Aula Node Full Stack"
 
@@ -149,6 +146,23 @@ function adicionarFilme(array){
 // }
 
 
+
+// function alterarStatusEmCartaz2(codigo,funcaoDeEncontrarFilme){
+//   const filmeEncontrado = funcaoDeEncontrarFilme(codigo)
+//   filmeEncontrado.emCartaz = !filmeEncontrado.emCartaz
+// }
+// function buscarFilme(codigo){
+//   for(let i = 0; i < catalogo.length; i++){
+//       if(catalogo[i].codigo === codigo) {
+//           return catalogo[i]
+//       }
+//    }
+// }
+
+// alterarStatusEmCartaz2(2,buscarFilme)
+  // console.log(catalogo)
+// 
+
 // const listarFilmesDeLongaDuracao = () => {
 //   const filmesLongos = catalogo.filter((filme) => {
 //       return filme.duracao > 150
@@ -162,10 +176,64 @@ function adicionarFilme(array){
 
 //   console.log(total)
 
-let total =[0,2,2,3].reduce(function(acumulador,valoratual,index,array) {
-  console.log("Interacao",index,acumulador,valoratual)
-  acumulador.push(valoratual)
-    return acumulador;
-  },[])
+// let total =[0,2,2,3].reduce(function(acumulador,valoratual,index,array) {
+//   console.log("Interacao",index,acumulador,valoratual)
+//   acumulador.push(valoratual)
+//     return acumulador;
+//   },[])
   
-  console.log(total)
+//   console.log(total)
+
+
+// catalogo.forEach(verFilme)
+
+// // // function buscarFilme2(codigo){
+// // //   for (let i = 0;i< catalogo.length;i++){
+// // //     if(catalogo[i]=== codigo){
+// // //       return catalogo[i]
+// // //     }
+// // //   }
+// // // }
+
+// // // console.log(buscarFilme2(1))
+
+
+
+
+
+const catalogo = require("./database/catalogo.json")
+
+// const adicionarFilme = (filme) => {
+//   catalogo.push(filme)
+// }
+
+// function alterarStatusEmCartaz(codigo,funcaoDeEncontrarFilme){
+//   const filmeEncontrado =filmeEncontrado(codigo)
+//   filmeEncontrado.emCartaz = !filmeEncontrado.emCartaz
+// }
+
+function verFilme(catalogo){
+//  console.log(filme.titulo+" - "+filme.anoLancamento)
+return catalogo
+}
+
+let verfilme2 = catalogo
+verfilme2.forEach(function(item2){
+  console.log(item2)
+})
+
+function buscarFilme(codigo){
+  let retornoFilter = catalogo.filter((verFilme) =>
+    verFilme.codigo === codigo)
+    return retornoFilter
+     
+    
+  
+}
+console.log(buscarFilme(2))
+
+const retornoMap = catalogo.map((verFilme)=>
+  verFilme.titulo)
+console.log(retornoMap) 
+
+

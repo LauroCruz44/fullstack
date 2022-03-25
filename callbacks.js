@@ -30,10 +30,3 @@ function processar(array,adicionarHttp,b){
 }
 
 console.log(processar(["www.yahoo.com.br","www.google.com"],adicionarHttp))
-
-
-const somar = (numero,numero2) => {
-    console.log("Recebi um numero:"+numero)
-    
-}
-somar(13);

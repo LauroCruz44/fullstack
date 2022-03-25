@@ -12,7 +12,15 @@
         "titulo":"Velozes e Furiosos 2",
         "duracao":1.60,
         "atores":["Ator1","Ator2","Ator3"],
-        "anoLancamento":2000,
+        "anoLancamento":2012,
+        "emCartaz":false
+    },
+    {
+        "codigo":3,
+        "titulo":"Velozes e Furiosos 3",
+        "duracao":1.80,
+        "atores":["Ator1","Ator4","Ator3"],
+        "anoLancamento":2010,
         "emCartaz":false
     }
 ]
