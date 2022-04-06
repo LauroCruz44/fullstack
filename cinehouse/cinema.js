@@ -203,37 +203,27 @@
 
 const catalogo = require("./database/catalogo.json")
 
-// const adicionarFilme = (filme) => {
-//   catalogo.push(filme)
-// }
-
-// function alterarStatusEmCartaz(codigo,funcaoDeEncontrarFilme){
-//   const filmeEncontrado =filmeEncontrado(codigo)
-//   filmeEncontrado.emCartaz = !filmeEncontrado.emCartaz
-// }
-
-function verFilme(catalogo){
-//  console.log(filme.titulo+" - "+filme.anoLancamento)
-return catalogo
+const adicionarFilme = (filme) => {
+  catalogo.push(filme)
 }
 
-let verfilme2 = catalogo
-verfilme2.forEach(function(item2){
-  console.log(item2)
-})
-
-function buscarFilme(codigo){
-  let retornoFilter = catalogo.filter((verFilme) =>
-    verFilme.codigo === codigo)
-    return retornoFilter
-     
-    
-  
+function alterarStatusEmCartaz(codigo,funcaoDeEncontrarFilme){
+  const filmeEncontrado =filmeEncontrado(codigo)
+  filmeEncontrado.emCartaz = !filmeEncontrado.emCartaz
 }
-console.log(buscarFilme(2))
 
-const retornoMap = catalogo.map((verFilme)=>
-  verFilme.titulo)
-console.log(retornoMap) 
+function verFilme(filme){
+ console.log(filme.titulo+" - "+filme.anoLancamento)
+}
 
+// let verfilme2 = catalogo
+// catalogo.forEach(verFilme)
 
+function buscarFilme(codigo)
+   catalogo.forEach((filme) =>{
+     if(filme.codigo === codigo){
+       return filme
+     }
+   })
+
+buscarFilme(3)

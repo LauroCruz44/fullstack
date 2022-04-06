@@ -1,0 +1,24 @@
+{
+  "dependencies": {
+    "express": "^4.17.3"
+  },
+  "name": "dh",
+  "version": "1.0.0",
+  "main": "app.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LauroCruz44/fullstack.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LauroCruz44/fullstack/issues"
+  },
+  "homepage": "https://github.com/LauroCruz44/fullstack#readme",
+  "description": ""
+}

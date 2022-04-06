@@ -1,0 +1,29 @@
+body {
+    font-family: Arial,;
+    background-image:url('Capture.JPG');
+    background-size: 400px;
+}
+
+p{
+    font-size: 14px;
+    font-weight:bold;
+    text-align: justify;
+    line-height: 20px;
+    background-color: blue;
+    opacity: 0.9;
+    color: white;
+}
+
+h2{font-style:italic ;
+text-align: center;
+color:purple;}
+
+.titulo {text-transform:uppercase;
+text-align: center;
+color: blue;
+}
+
+#titulo{
+    text-align: left;
+    color: red;
+}
