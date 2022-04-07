@@ -12,6 +12,9 @@ p{
     background-color: blue;
     opacity: 0.9;
     color: white;
+    padding: 10px;
+    box-sizing:inherit;
+    /*display: inline-block;*/
 }
 
 h2{font-style:italic ;
@@ -23,7 +26,7 @@ text-align: center;
 color: blue;
 }
 
-#titulo{
+#texto{
     text-align: left;
     color: red;
 }
